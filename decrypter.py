@@ -158,13 +158,13 @@ def decrypt_main():
 
         final_sentence = capitalization_processing(final_sentence, full_stop_punc, sentence)
 
-
+        print('Decrypted Result:' + '\n')
         joined_sentence = " ".join(final_sentence)
         return joined_sentence
 
 
     def loop_start(text_input):  # starts entire decryption sequence, then takes user input which is passed on to exit_code
-        print('\n' + '\n' + '\n' + '\n' + 'Decrypted Result:' + '\n')
+        print('\n' + '\n' + '\n' + '\n')
         slow_text_print(sentence(text_input))
         print('\n' + '\n')
         for x in final_sentence:
