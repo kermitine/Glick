@@ -11,9 +11,7 @@ def decrypt_main():
 
   
     print('Decrypter V' + version + ' initialized')
-
-
-
+    print('___________________________________')
     text_input = input(str('\n' + 'Enter text for decryption:' + ' \n'))
 
 

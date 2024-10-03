@@ -1,5 +1,5 @@
 
-version = '1.0.1'
+version = '1.0.2'
 import time
 import decrypter
 import encrypter
@@ -32,7 +32,9 @@ def get_mode():
 
 
 def glick_main():
-    print('Glickcrypt V' + version + ' initialized' + '\n')
+    print('Glickcrypt V' + version + ' initialized')
+    print('___________________________________')
+    print('\n')
     mode = get_mode()
     if mode == 'dec':
         decrypter.decrypt_main()

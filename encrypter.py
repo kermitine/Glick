@@ -7,7 +7,7 @@ from files_enc.ascii import *
 def encrypt_main():
 
     print('Encryptor V' + version + ' initialized')
-
+    print('___________________________________')
     text_input = input(str('\n' + 'Enter text for encryption:' + ' \n'))
 
 
