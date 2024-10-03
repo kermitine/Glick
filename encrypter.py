@@ -89,6 +89,7 @@ def encrypt_main():
 
     while True:
         if exitCode1 in ['t', 'T']:
+            print('\n')
             glick.glick_main()
             break
         elif exitCode1 is None:
