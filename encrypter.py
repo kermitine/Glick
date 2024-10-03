@@ -1,12 +1,11 @@
 import glick
 import time
 import sys
-from files_enc.vars import *
-from files_enc.ascii import *
+from files.vars import *
 
 def encrypt_main():
 
-    print('Encryptor V' + version + ' initialized')
+    print('Encryptor V' + version_enc + ' initialized')
     print('___________________________________')
     text_input = input(str('\n' + 'Enter text for encryption:' + ' \n'))
 

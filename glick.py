@@ -1,10 +1,9 @@
 
-version = '1.0.2'
 import time
 import decrypter
 import encrypter
-from files_enc.ascii import *
-
+from files.ascii import *
+from files.vars import *
 def ascii():
     print(ascii_kermitine_portrait)
     print(ascii_kermitine)
@@ -32,7 +31,7 @@ def get_mode():
 
 
 def glick_main():
-    print('Glickcrypt V' + version + ' initialized')
+    print('Glickcrypt V' + version_gli + ' initialized')
     print('___________________________________')
     print('\n')
     mode = get_mode()

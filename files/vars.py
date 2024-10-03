@@ -5,6 +5,8 @@ vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
 full_stop_punc = punctuation[:3]
 end_punc = punctuation[:6]
 else_punc = punctuation[6:]
-version = '1.5.10'
+version_gli = '1.1.0'
+version_enc = '4.2.1'
+version_dec = '1.5.10'
 # WARNING: Do not modify with the variables above ----------------------------------------------------------------------
 gap_time = 0.1  # affects time (in seconds) between each word process. default: 0.1

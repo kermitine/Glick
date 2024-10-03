@@ -2,15 +2,14 @@ import enchant
 import time
 import sys
 import glick
-from files_dec.vars import *
-from files_dec.ascii import *
+from files.vars import *
 
 def decrypt_main():
     # Create a dictionary object for English (US)
     d = enchant.Dict('en_US')
 
   
-    print('Decrypter V' + version + ' initialized')
+    print('Decrypter V' + version_dec + ' initialized')
     print('___________________________________')
     text_input = input(str('\n' + 'Enter text for decryption:' + ' \n'))
 
