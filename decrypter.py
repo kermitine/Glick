@@ -11,7 +11,6 @@ def decrypt_main():
 
   
     print('Decrypter V' + version + ' initialized')
-    print('Powered by PyEnchant')
 
 
 
@@ -181,6 +180,7 @@ def decrypt_main():
 
     while True:
         if exit_code in ['t', 'T']: # restarts loop
+            print('\n')
             glick.glick_main()
             break
         else:
