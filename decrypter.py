@@ -1,9 +1,11 @@
 import enchant
 import time
 import sys
+from glick import *
 from files_dec.vars import *
 from files_dec.ascii import *
-def main():
+
+def decrypt_main():
     # Create a dictionary object for English (US)
     d = enchant.Dict('en_US')
 
@@ -181,12 +183,12 @@ def main():
 
     while True:
         if exit_code in ['t', 'T']: # restarts loop
-            text_input = input(str('\n' + 'Enter text for decryption:' + ' \n'))
-            exit_code = loop_start(text_input)
+            glick_main()
+            break
         else:
             print('Program Terminating...') # breaks loop, closes program
             time.sleep(1.5)
             break
 
 if __name__ == "__main__":
-    main()
+    decrypt_main()
