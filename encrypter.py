@@ -4,11 +4,8 @@ from files_enc.vars import *
 from files_enc.ascii import *
 
 def encrypt_main():
-    print(ascii_kermitine_portrait)
-    print(ascii_kermitine)
 
-
-    print('Encryptor V' + version)
+    print('Encryptor V' + version + ' initialized')
 
     text_input = input(str('\n' + 'Enter text for encryption:' + ' \n'))
 

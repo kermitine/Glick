@@ -9,10 +9,8 @@ def decrypt_main():
     # Create a dictionary object for English (US)
     d = enchant.Dict('en_US')
 
-    print(ascii_kermitine_portrait)
-    print(ascii_kermitine)
-
-    print('Decrypter V' + version)
+  
+    print('Decrypter V' + version + ' initialized')
     print('Powered by PyEnchant')
 
 
