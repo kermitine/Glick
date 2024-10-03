@@ -1,7 +1,8 @@
 
-version = '0.2.0'
+version = '0.3.0'
 import time
 import decrypter
+import encrypter
 def mode_select_user_input():
     return input('Enter e for encryption. Enter d for decryption.' + '\n')
 
@@ -23,6 +24,8 @@ def get_mode():
 def glick_main():
     if get_mode() == 'dec':
         decrypter.decrypt_main()
+    else:
+
 
 if __name__ == '__main__':
     glick_main()
