@@ -1,5 +1,5 @@
 
-version = '0.3.0'
+version = '0.4.0'
 import time
 import decrypter
 import encrypter
@@ -25,6 +25,7 @@ def glick_main():
     if get_mode() == 'dec':
         decrypter.decrypt_main()
     else:
+        encrypter.encrypt_main()
 
 
 if __name__ == '__main__':

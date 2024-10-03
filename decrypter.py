@@ -1,7 +1,7 @@
 import enchant
 import time
 import sys
-from glick import *
+import glick
 from files_dec.vars import *
 from files_dec.ascii import *
 
@@ -183,7 +183,7 @@ def decrypt_main():
 
     while True:
         if exit_code in ['t', 'T']: # restarts loop
-            glick_main()
+            glick.glick_main()
             break
         else:
             print('Program Terminating...') # breaks loop, closes program
