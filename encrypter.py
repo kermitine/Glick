@@ -1,5 +1,6 @@
 import glick
 import time
+import sys
 from files_enc.vars import *
 from files_enc.ascii import *
 
@@ -78,8 +79,17 @@ def encrypt_main():
         return joined_sentence
 
 
+    def slow_text_print(sentence):
+        for char in sentence:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.015)
+        return None
+    
     def loopStart(text_input):
-        print('\n' + '\n' + '\n' + '\n' + 'Encrypted Result:' + '\n' + wholesentence(text_input) + '\n' + '\n')
+        print('\n' + '\n' + '\n' + '\n' + 'Encrypted Result:' + '\n')
+        slow_text_print(wholesentence(text_input))
+        print('\n' + '\n')
         exitCode = input(str('\n' + 'Enter t to translate another sentence. Enter any other key to exit.' + '\n'))
         return exitCode
 

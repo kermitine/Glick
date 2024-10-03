@@ -5,5 +5,5 @@ vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
 full_stop_punc = punctuation[:3]
 end_punc = punctuation[:6]
 else_punc = punctuation[6:]
-version = '4.1.0'
+version = '4.2.0'
 
