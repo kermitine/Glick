@@ -49,3 +49,7 @@ ascii_kermitine = ''' __                             .__   __   .__
 |    < \  ___/  |  | \/|  Y Y  \|  | |  |  |  ||   |  \\  ___/ 
 |__|_ \ \___  > |__|   |__|_|  /|__| |__|  |__||___|  / \___  >
      \/     \/               \/                     \/      \/ '''
+
+def ascii_run():
+    print(ascii_kermitine_portrait)
+    print(ascii_kermitine)

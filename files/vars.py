@@ -5,7 +5,7 @@ vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
 full_stop_punc = punctuation[:3]
 end_punc = punctuation[:6]
 else_punc = punctuation[6:]
-version_gli = '1.1.0'
+version_gli = '1.1.1'
 version_enc = '4.2.1'
 version_dec = '1.5.10'
 # WARNING: Do not modify with the variables above ----------------------------------------------------------------------

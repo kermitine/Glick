@@ -2,12 +2,8 @@
 import time
 import decrypter
 import encrypter
-from files.ascii import *
+import files.ascii as ascii
 from files.vars import *
-def ascii():
-    print(ascii_kermitine_portrait)
-    print(ascii_kermitine)
-
 
 
 
@@ -46,6 +42,6 @@ def glick_main():
 
 
 if __name__ == '__main__':
-    ascii()
+    ascii.ascii_run()
     glick_main()
     
