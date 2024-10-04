@@ -8,6 +8,17 @@ def encrypt_main():
     print('Encryptor V' + version_enc + ' initialized')
     print('___________________________________')
     text_input = input(str('\n' + 'Enter text for encryption:' + ' \n'))
+    for x in range(2):
+        print('\n')
+
+
+
+    def word_seperator(word_entry):
+        broken_list = []
+        for char in word_entry:
+            broken_list.append(char)
+        return broken_list
+
 
 
     def encryption(text_input):
@@ -18,13 +29,18 @@ def encrypt_main():
         editPunc = ''
         current_string = ''
         final_word = ''
-        for x in text_input: # break up word into list
-            broken_list.append(x)
 
+        time.sleep(gap_time)
+
+        broken_list = word_seperator(text_input) # fragments word string into list containing each character
+        
+        print('Processing ' + text_input)
 
         for x in broken_list: # extract consonants
             if x in nums: # detects numbers and leaves them unchanged
                 final_word = "".join(broken_list)
+                print('Number detected, passing')
+                print('\n')
                 return final_word # immediately return number
             if x not in vowels: # add all sequential consonants to a list
                 consonants.append(x)
@@ -32,6 +48,8 @@ def encrypt_main():
                 break
 
         if consonants:
+            print('Consonant word detected')
+            print('Consonant cluster == ' + ''.join(consonants))
             cut_list = broken_list[len(consonants):] # cuts broken_list so the vowels at the start are deleted
             for x in range(len(consonants)): # moves consonants to the back
                 current_string = consonants[x]
@@ -45,10 +63,12 @@ def encrypt_main():
                 elif cut_list[x] in else_punc:
                     popList.append(x)
             for y in sorted(popList, reverse=True):
+                print('Processing punctuation')
                 cut_list.pop(y) # pops og indexes outside of loop
             cut_list = [item.lower() for item in cut_list]
             final_word = "".join(cut_list) # joins list into string and returns
         if not consonants:
+            print('Vowel word detected')
             broken_list.append('yay')
             for x in range(len(broken_list)): # moves punctuation to the back of word, but keeps og punc to maintain indexes
                 if broken_list[x] in punctuation:
@@ -56,9 +76,11 @@ def encrypt_main():
                     broken_list.append(editPunc)
                     popList.append(x)   # adds index of og punctuation to popList, to be removed outside of loop
             for y in popList:
+                print('Processing punctuation')
                 broken_list.pop(y) # pops og indexes outside of loop
             broken_list = [item.lower() for item in broken_list]
             final_word = "".join(broken_list)
+        print('\n')
         return final_word
 
     def wholesentence(sentence):
@@ -79,6 +101,7 @@ def encrypt_main():
 
 
     def slow_text_print(sentence):
+        print('\n' + '\n' + '\n' + '\n' + 'Encrypted Result:' + '\n')
         for char in sentence:
             sys.stdout.write(char)
             sys.stdout.flush()
@@ -86,7 +109,6 @@ def encrypt_main():
         return None
     
     def loopStart(text_input):
-        print('\n' + '\n' + '\n' + '\n' + 'Encrypted Result:' + '\n')
         slow_text_print(wholesentence(text_input))
         print('\n' + '\n')
         exitCode = input(str('\n' + 'Enter t to translate another sentence. Enter any other key to exit.' + '\n'))

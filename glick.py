@@ -44,4 +44,3 @@ def glick_main():
 if __name__ == '__main__':
     ascii.ascii_run()
     glick_main()
-    
