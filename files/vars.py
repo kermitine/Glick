@@ -9,4 +9,4 @@ version_gli = '1.1.1'
 version_enc = '4.2.2'
 version_dec = '1.5.10'
 # WARNING: Do not modify with the variables above ----------------------------------------------------------------------
-gap_time = 0.1  # affects time (in seconds) between each word process. default: 0.1
+gap_time = 0.05 # affects time (in seconds) between each word process. default: 0.1
